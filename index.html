@@ -21,34 +21,29 @@
 
                 <!-- datetime -->
                 <div class="weekday col-xs-4">
-
+                  <p>{{ day.datetime | date }}</p>
                 </div>
-
 
                 <!-- icon -->
                 <div class="weather col-xs-3">
-
+                  <img ng-src="{{ day.icon }}">
                 </div>
 
-                <div class="col-xs-1"></div>
-
+                <div class="weather col-md-1"></div>
 
                 <!-- high -->
                 <div class="high col-xs-2">
-
-
+                  <p>{{ day.high }}&deg;</p>
                 </div>
-
 
                 <!-- low -->
                 <div class="low col-xs-2">
-
+                  <p>{{ day.low }}&deg;</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        </ul>
       </div>
     </div>
 
